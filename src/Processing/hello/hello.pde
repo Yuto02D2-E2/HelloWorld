@@ -1,11 +1,14 @@
 void setup() {
     size(300, 300);
     background(255);
+		String message = "hello world with processing";
+		hello(message);
 }
 
-void draw() {
-    println("hello world with processing");
+void hello(String message) {
+    println(message);
     textAlign(CENTER);
     textSize(30);
-    text("hello world", width / 2, height / 2);
+    text(message, width / 2, height / 2);
 }
+

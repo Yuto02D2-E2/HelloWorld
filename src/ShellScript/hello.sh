@@ -1,13 +1,12 @@
 #!/bin/sh
 
-if [ $# -eq 1 ]; then
-	NAME=$1
-else
-	NAME="world"
-fi
+function hello() {
+	echo "$1"
+	return
+}
 
-echo "now : $(date +%F)"
-echo "hello $NAME with shell script"
+text="hello world with shell script"
+hello "$text"
 
 # usage :
 # hoge@hige $ sh hello.sh
